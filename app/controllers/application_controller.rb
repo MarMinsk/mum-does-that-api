@@ -1,14 +1,14 @@
 class ApplicationController < ActionController::API
   before_action :authenticate_user!
 
- def authenticate_user!
-   render json: { errors: ["Unauthorized"] }, status: 401 unless user_signed_in?
- end
+  def authenticate_user!
+    render json: { errors: ["Unauthorized"] }, status: 401 unless user_signed_in?
+  end
 
-# !! needed to return a boolean, which will be the opposite of false. if !! wasn't there it would return the curent_user name
- def user_signed_in?
-   !!current_user
- end
+  # !! needed to return a boolean, which will be the opposite of false. if !! wasn't there it would return the curent_user name
+  def user_signed_in?
+    !!current_user
+  end
 
   def current_user
     @current_user ||= User.find(decoded_token[:id]) if id_found?
@@ -18,17 +18,18 @@ class ApplicationController < ActionController::API
 
   private
 
-  def id_found?
-    token && decoded_token && decoded_token[:id]
-  end
-
-  def decoded_token
-    @decoded_token ||= Auth.decode(token) if token
-  end
-
-  def token
-    @token ||= if request.headers['Authorization'].present?
-      request.headers['Authorization'].split.last
+    def id_found?
+      token && decoded_token && decoded_token[:id]
     end
-  end
+
+    def decoded_token
+      @decoded_token ||= Auth.decode(token) if token
+    end
+
+    def token
+      @token ||= if request.headers['Authorization'].present?
+        request.headers['Authorization'].split.last
+      end
+    end
+
 end
