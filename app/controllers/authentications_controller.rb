@@ -3,6 +3,7 @@ class AuthenticationsController < ApplicationController
 
   def register
     user = User.new(user_params)
+p user
     if user.save
       token = Auth.issue({id: user.id})
       render json: { token: token, user: UserSerializer.new(user) }, status: :ok
@@ -24,6 +25,8 @@ class AuthenticationsController < ApplicationController
   private
 
     def user_params
-      params.permit(:username, :first_name, :last_name, :email, :password, :password_confirmation)
+      hash = {}
+      hash.merge! params.slice!(:username, :first_name, :last_name, :email, :password, :password_confirmation).permit!
+      hash
     end
 end
