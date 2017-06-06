@@ -71,6 +71,38 @@ User.create!([
     company_logo: "https://static1.squarespace.com/static/59107e6abe65940ba9a56904/t/591a10274402434dcfe2c83d/1496679735026/?format=1500w",
     company_profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque. Pellentesque tempor, neque ut rhoncus feugiat, quam diam interdum velit."
   },
+  {
+    username: "Liz",
+    first_name: "Liz",
+    last_name: "Lee",
+    email: "liz@liz.com",
+    password: "password",
+    image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAcEAAAAJDkzZDc0MTg5LTEzY2YtNDgzYi04ODM0LTYzZDg4M2YzOWQ4Yg.jpg",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque.",
+    location: "Oxford",
+    linkedin: "https://www.linkedin.com/in/lizlee01/",
+    twitter: "@lizardlee",
+    company_name: "",
+    company_website: "",
+    company_logo: "",
+    company_profile: ""
+  },
+  {
+    username: "Elaine",
+    first_name: "Elaine",
+    last_name: "Farrell",
+    email: "elaine@elaine.com",
+    password: "password",
+    image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjDAAAAJDAzYTZkYzY5LTM1MTQtNDQxZS1hYzU5LWFmYWE4NDgzNmFkNQ.jpg",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque.",
+    location: "West London",
+    linkedin: "https://www.linkedin.com/in/elainefarrell/",
+    twitter: "",
+    company_name: "",
+    company_website: "http://www.things-unlimited.com/",
+    company_logo: "https://pbs.twimg.com/profile_images/534639874549116928/viC-dY5V.png",
+    company_profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
+  },
   ])
 
 Skill.create!([

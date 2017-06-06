@@ -10,10 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170601133956) do
+ActiveRecord::Schema.define(version: 20170606094036) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "skills", force: :cascade do |t|
+    t.string "skill"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "skills_tasks", id: false, force: :cascade do |t|
+    t.bigint "skill_id", null: false
+    t.bigint "task_id", null: false
+  end
+
+  create_table "skills_users", id: false, force: :cascade do |t|
+    t.bigint "skill_id", null: false
+    t.bigint "user_id", null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "task"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -23,6 +46,15 @@ ActiveRecord::Schema.define(version: 20170601133956) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image"
+    t.text "bio"
+    t.string "location"
+    t.string "linkedin"
+    t.string "twitter"
+    t.string "company_name"
+    t.string "company_website"
+    t.string "company_logo"
+    t.text "company_profile"
   end
 
 end

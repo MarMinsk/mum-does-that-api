@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tasks
+  resources :skills
   scope :api do
     resources :users
     post 'register', to: 'authentications#register'
