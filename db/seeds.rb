@@ -49,6 +49,8 @@ user1 = User.create!(
   company_logo: "https://pbs.twimg.com/media/CtM-xQTWEAAO2qf.jpg",
   company_profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
 )
+user1.skills << s6
+user1.skills << s7
 
 user2 = User.create!(
     username: "june",
@@ -67,6 +69,7 @@ user2 = User.create!(
     company_logo: "https://static1.squarespace.com/static/5849382c1b631b603005e5fc/t/59303f3f15cf7d726f5d2127/1496518335666/?format=1500w",
     company_profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. "
   )
+  user2.skills << s8
 
 user3 = User.create!(
     username: "sarah",
@@ -85,6 +88,8 @@ user3 = User.create!(
     company_logo: "https://static1.squarespace.com/static/5849382c1b631b603005e5fc/t/58cc5bf2e4fcb50762fbe490/1489787919397/Happity?format=500w",
     company_profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque. "
   )
+  user3.skills << s25
+  user3.skills << s26
 
 user4 = User.create!(
     username: "virginia",
@@ -104,6 +109,8 @@ user4 = User.create!(
     company_profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque. Pellentesque tempor, neque ut rhoncus feugiat, quam diam interdum velit."
   )
 
+user4.skills << s15
+
 user5 = User.create!(
     username: "Liz",
     first_name: "Liz",
@@ -121,6 +128,10 @@ user5 = User.create!(
     company_logo: "",
     company_profile: ""
   )
+  user5.skills << s19
+  user5.skills << s20
+  user5.skills << s22
+  user5.skills << s27
 
 user6 = User.create!(
     username: "Elaine",
@@ -139,33 +150,43 @@ user6 = User.create!(
     company_logo: "https://pbs.twimg.com/profile_images/534639874549116928/viC-dY5V.png",
     company_profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
 )
+  user6.skills << s13
+  user6.skills << s27
+  user6.skills << s29
 
 task1 = Task.create!(
     task: "Logo design for maternity yoga instructor",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
 )
+task1.skills << s7
 
 task2 = Task.create!(
     task: "Account software set up for small children's charity",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
 )
+task2.skills << s8
 
 task3 = Task.create!(
     task: "HR policy review for social enterprise coffee shop",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
 )
+task3.skills << s12
 
 task4 = Task.create!(
     task: "Legal advice for early-stage social welfare charity",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
 )
+task4.skills << s15
 
 task5 = Task.create!(
     task: "New mumtrepreneur looking for a mentor",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
 )
+task5.skills << s18
 
 task6 = Task.create!(
     task: "Starting out on a new venture - looking for a co-founder",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
 )
+task6.skills << s4
+task6.skills << s16
