@@ -155,38 +155,44 @@ user6 = User.create!(
   user6.skills << s29
 
 task1 = Task.create!(
-    task: "Logo design for maternity yoga instructor",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
+    name: "Logo design for maternity yoga instructor",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque.",
+    user_id: 2
 )
 task1.skills << s7
 
 task2 = Task.create!(
-    task: "Account software set up for small children's charity",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
+    name: "Account software set up for small children's charity",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque.",
+    user_id: 2
 )
 task2.skills << s8
 
 task3 = Task.create!(
-    task: "HR policy review for social enterprise coffee shop",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
+    name: "HR policy review for social enterprise coffee shop",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque.",
+    user_id: 4
 )
 task3.skills << s12
 
 task4 = Task.create!(
-    task: "Legal advice for early-stage social welfare charity",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
+    name: "Legal advice for early-stage social welfare charity",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque.",
+    user_id: 6
 )
 task4.skills << s15
 
 task5 = Task.create!(
-    task: "New mumtrepreneur looking for a mentor",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
+    name: "New mumtrepreneur looking for a mentor",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque.",
+    user_id: 6
 )
 task5.skills << s18
 
 task6 = Task.create!(
-    task: "Starting out on a new venture - looking for a co-founder",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque."
+    name: "Starting out on a new venture - looking for a co-founder",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat quam, aliquet et massa eget, iaculis laoreet turpis. Donec ac ultricies neque.",
+    user_id: 3
 )
 task6.skills << s4
 task6.skills << s16
