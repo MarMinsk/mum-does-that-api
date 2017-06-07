@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  resources :tasks
-  resources :skills
   scope :api do
     resources :users
+    resources :tasks
+    resources :skills
+    # these needed to be created as they aren't part of scaffold - those above are created in the scaffold
     post 'register', to: 'authentications#register'
     post 'login', to: 'authentications#login'
   end
